@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhel7:7.3 1
+FROM registry.redhat.io:5000/rhel7:7.3 1
 
 MAINTAINER Gigi <training@gigi.com>
 
