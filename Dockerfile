@@ -19,9 +19,6 @@ ENV DOCROOT=/var/www/html \
     LANG=en_US \
     LOG_PATH=/var/log/httpd
 
-# Need this for installing Apache from classroom yum repo
-ADD training.repo /etc/yum.repos.d/training.repo
-
 RUN   yum install -y --setopt=tsflags=nodocs --noplugins httpd && \ 
       yum clean all --noplugins -y && \
       echo "Hello from the httpd-parent container!" > ${HOME}/index.html
