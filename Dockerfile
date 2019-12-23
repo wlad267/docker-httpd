@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhel7
+FROM docker.io/library/centos 
 
 MAINTAINER Gigi <training@gigi.com>
 
